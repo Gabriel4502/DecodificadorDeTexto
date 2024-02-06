@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: silver;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px 0px;
+    width: 100%;
+    height: 97vh;
+    background: linear-gradient(rgb(255, 196, 0), rgb(0, 0, 0));
+
+
+}
+
+#logoContainer {
+    width: 220px;
+    height: 48px;
+
+}
+
+.inputContainer {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.outputContainer {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+
+
+}
+
+
+
+#inputSection {
+
+    height: 73vh;
+    position: relative;
+    top: 50px;
+
+}
+
+input {
+    width: 70%;
+    height: 55px;
+    outline: none;
+    border: none;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0A3871;
+
+    background-color: transparent;
+
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#textoResultante {
+    display: inline-block;
+    max-width: 100%;
+    height: 35%;
+    text-align: justify;
+    background-color: white;
+    color: darkblue;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    word-break: break-all;
+    word-wrap: break-all !important;
+}
+
+#emptyTextContainer {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#noTextMessage {
+    width: 45%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+
+    display: none !important;
+    background-color: white;
+}
+
+#resultado {
+    width: 28vw;
+    height: 84%;
+    word-wrap: break-all;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+#texto {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 55%;
+    word-wrap: break-all;
+}
+
+.show {
+    display: block;
+    background-color: white;
+    color: darkblue;
+
+}
+
+#NoMessage {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+#NoMessageDisclaimer {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.controllsContainer {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.buttonsContainer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.crypto {
+    background-color: indigo;
+    color: white;
+    width: 328px;
+    height: 67px;
+    border: 1px black solid;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.decrypt {
+    background-color: rgb(255, 166, 0);
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#copyButtonContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.copiar {
+    margin-top: 50px;
+    cursor: pointer;
+    width: 80%;
+    height: auto;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px;
+    background-color: darkgray;
+}
+
+#textFormatDisclaimer {
+    color: white;
+}
+
+@media (max-width: 722px) {
+    #Imagem {
+        display: none;
+    }
+
+    .container {
+        width: 100vw;
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .outputContainer {
+        width: 95%;
+        height: 30%;
+
+    }
+
+    .controllsContainer {
+        width: 100%;
+        height: 50%;
+
+
+    }
+
+    .inputContainer {
+        height: 400px;
+        width: 90%;
+    }
+
+    #emptyTextContainer {
+        width: 100%;
+    }
+
+    #noTextMessage {
+        height: 30%;
+        width: 90%;
+        text-align: justify;
+    }
+
+
+    #noMessageDisclaimer {
+        max-height: 60%;
+        width: auto;
+    }
+
+    #logoContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: start;
+    }
+
+    .crypto {
+        width: 90%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .buttonsContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #inputSection {
+        height: 30%;
+    }
+
+    #resultado {
+        height: auto;
+        width: 80%;
+        background-color: transparent;
+    }
+
+    #textoResultante {
+        background-color: transparent;
+    }
+
+}

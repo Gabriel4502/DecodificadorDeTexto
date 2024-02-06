@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encryptador de texto</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="logoContainer">
+            <img src="/img/Logo.png" />
+        </div>
+
+        <div class="inputContainer">
+            <div id="inputSection">
+                <input type="text" placeholder="Digite seu texto">
+
+            </div>
+            <div class="controllsContainer">
+
+                <span id="textFormatDisclaimer">! Apenas letras minúsculas e sem acento.</span>
+                <div class="buttonsContainer">
+
+                    <button onclick="encrypt()" class="crypto encrypt">Criptografar</button>
+                    <button onclick=" decrypt()" class="crypto decrypt">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="outputContainer">
+            <div id="emptyTextContainer">
+
+                <div id="noTextMessage">
+                    <img id="Imagem" src="/img/Boneco.png" />
+                    <span id="NoMessage">Nenhuma mensagem encontrada</span>
+                    <span id="NoMessageDisclaimer">Digite um texto que você deseja cryptografar ou
+                        descryptografar.</span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div id="resultado">
+                <div id="texto">
+                    <a id="textoResultante"></a>
+                </div>
+                <div id="copyButtonContainer">
+                    <button onclick="copyText()" class="copiar">Copiar</button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <footer>
+        <span>
+            Desenvolvido por: Gabriel Messias da Silva
+    </footer>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
