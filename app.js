@@ -1,4 +1,4 @@
-// let mensagem = document.querySelector('input').value;
+
 var containerInputVazio = document.getElementById("emptyTextContainer");
 var containerInputPreenchido = document.getElementById("resultado");
 let textoTrabalhado = document.getElementById("textoResultante");
@@ -71,19 +71,12 @@ function decrypt() {
         if (arr.slice(index, index + 4).join('') === "ober") texto.splice(index, 4, 'o');
         if (arr.slice(index, index + 4).join('') === "ufat") texto.splice(index, 4, 'u');
 
-        console.log(texto.join(""));
 
     });
 
-    console.log(texto)
     textoTrabalhado.innerHTML = texto.join('');
 }
 
-console.log(texto.join(''));
-
-function copyText() {
-
-}
 
 
 
