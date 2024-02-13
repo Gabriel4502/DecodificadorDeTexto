@@ -4,6 +4,11 @@ var containerInputPreenchido = document.getElementById("resultado");
 let textoTrabalhado = document.getElementById("textoResultante");
 containerInputPreenchido.classList.toggle("hidden", true);
 
+function copyToClipp() {
+    let copyText = document.getElementById("textoResultante").innerHTML;
+    navigator.clipboard.writeText(copyText);
+
+}
 let texto = [];
 function toggleContainer() {
     if (!(document.querySelector('input').value == '') && (containerInputVazio.className == "")) {
